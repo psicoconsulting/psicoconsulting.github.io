@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description"
+	content="Servicios de psicoterapia cognitivo multimodal y selección de personal. Primera consulta gratuita.">
+<title>Psicoconsulting-empresarial</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+	content="psicologia, recursos humanos, formación">
+<meta name="author" content="psicoconsulting-empresarial">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta charset="utf-8">
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.css" rel="stylesheet">
+<link href="css/psicoconsulting.css" rel="stylesheet">
+
+
+<script
+	src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBThZq9xw_Our2_nj90_mUuBXb6CA_Skuc&sensor=false"></script>
+<script>
+	function initialize() {
+		console.log('works');
+		var mapOptions = {
+			zoom : 16,
+			center : new google.maps.LatLng(41.43711451401866, 2.204956700000025),
+			mapTypeId : google.maps.MapTypeId.ROADMAP,
+			mapTypeControl : true,
+			mapTypeControlOptions : {
+				style : google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+				position : google.maps.ControlPosition.BOTTOM_CENTER
+			},
+			panControl : true,
+			panControlOptions : {
+				position : google.maps.ControlPosition.TOP_RIGHT
+			},
+			zoomControl : true,
+			zoomControlOptions : {
+				style : google.maps.ZoomControlStyle.LARGE,
+				position : google.maps.ControlPosition.LEFT_CENTER
+			},
+			scaleControl : true,
+			scaleControlOptions : {
+				position : google.maps.ControlPosition.TOP_LEFT
+			},
+			streetViewControl : true,
+			streetViewControlOptions : {
+				position : google.maps.ControlPosition.LEFT_TOP
+			},
+			scrollwheel : false,
+		};
+		var map = new google.maps.Map(document.getElementById("map-canvas"),
+				mapOptions);
+		var beachMarker = new google.maps.Marker({
+			position : new google.maps.LatLng(41.43711451401866, 2.204956700000025),
+			map : map
+		});
+		console.log('ends');
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+
+
+
+	<!-- NAVBAR
+    ================================================== -->
+	<div class="navbar-wrapper">
+		<!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+		<div class="container">
+
+			<div class="navbar navbar-inverse">
+				<div class="navbar-inner">
+					<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+					<button type="button" class="btn btn-navbar" data-toggle="collapse"
+						data-target=".nav-collapse">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<a class="brand active" href="index.html">Psicoconsulting-empresarial</a>
+					<!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="#trastornos">Trastornos</a></li>
+							<li><a href="#precios">Precios</a></li>
+							<li><a href="#contact">Contactanos</a></li>
+							<!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+							<li><a href="http://psicoconsulting.wordpress.com/">Blog</a>
+
+							</li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+				<!-- /.navbar-inner -->
+			</div>
+			<!-- /.navbar -->
+
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.navbar-wrapper -->
+
+
+
+	<!-- Carousel
+    ================================================== -->
+	<div id="myCarousel" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="img/way-of-love-2.jpg" alt="" />
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Psicoterapia</h1>
+						<p class="lead">Psicoterapia Cognitivo Multimodal. Tratamiento
+							para: depresión, adicciones, ansiedad, trastorno de angustia,
+							agorafobia, fobia social, terapia de pareja, duelo, TOC, etc.</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<img src="img/boats-hire.jpg" alt="" />
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>Selección de personal.</h1>
+						<p class="lead">Se ofrecen al cliente, después de una criba y
+							análisis curricular y personal completo, entre dos y tres
+							candidatos que se adapten al perfil solicitado.</p>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+	</div>
+	<!-- /.carousel -->
+
+	<div class="bs-docs-social">
+		<div class="row">
+			<ul class="bs-docs-social-buttons">
+				<li class="tweet-btn">Quieres una frase de aliento cada día?
+					Síguenos en las redes sociales! <a
+					href="https://twitter.com/psicoconsultin1"
+					class="twitter-follow-button" data-show-count="false"
+					data-lang="es" data-show-screen-name="false">Seguir a
+						@psicoconsultin1</a> <script>
+							!function(d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/
+										.test(d.location) ? 'http' : 'https';
+								if (!d.getElementById(id)) {
+									js = d.createElement(s);
+									js.id = id;
+									js.src = p
+											+ '://platform.twitter.com/widgets.js';
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+							}(document, 'script', 'twitter-wjs');
+						</script>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Marketing messaging and featurettes
+    ================================================== -->
+	<!-- Wrap the rest of the page in another container to center all the content. -->
+
+	<div class="container marketing">
+
+		<!-- Three columns of text below the carousel -->
+		<div class="row">
+			<!-- /.span4 -->
+			<div class="span4">
+
+				<h2>Psicoterapia</h2>
+				<p>
+					<b>Terapia cognitivo multimodal</b> para: adicciones, adolescentes,
+					autoestima, autoconocimiento, agorafobia, ansiedad, depresión,
+					procesos de duelo, obsesiones - TOC, terapia de pareja y otros. Se
+					hacen sesiones tanto presencialmente como por skype.
+				</p>
+
+
+			</div>
+			<!-- /.span4 -->
+			<div class="span4">
+
+				<h2>Selección de personal</h2>
+				<p>Conociendo perfectamente el sector y las funciones del puesto
+					a cubrir, aspecto que garantiza el conocimiento de las necesidades
+					de la organización, se diseña un perfil requerido para el puesto.</p>
+
+			</div>
+			<div class="span4">
+
+				<h2>Coaching</h2>
+				<p>Se realizan sesiones para descubrir los grandes recursos que
+					tenemos dentro de nosotros así como dirección, claridad,
+					inspiración, creatividad, determinación, pasión, motivación para
+					aprender y crecer, coraje y fortaleza.</p>
+
+			</div>
+			<!-- /.span4 -->
+		</div>
+		<!-- /.row -->
+
+
+		<section id="trastornos">
+			<h2>Conócete más</h2>
+			<p>Si sientes los síntomas de alguna patología de las que te
+				describimos a continuación, sería recomendable que hicieras
+				psicoterapia.</p>
+			<div class="tabbable tabs-left bs-docs-example">
+				<!-- Only required for left/right tabs -->
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab">Addiciones</a></li>
+					<li><a href="#tab2" data-toggle="tab">Depresión</a></li>
+					<li><a href="#tab3" data-toggle="tab">Autoconocimiento</a></li>
+					<li><a href="#autoestima" data-toggle="tab">Autoestima</a></li>
+					<li><a href="#tab4" data-toggle="tab">Agorafobia</a></li>
+					<li><a href="#tab5" data-toggle="tab">Ansiedad</a></li>
+					<li><a href="#tab6" data-toggle="tab">Procesos de duelo</a></li>
+					<li><a href="#tab7" data-toggle="tab">Obsesiones / TOC </a></li>
+					<li><a href="#tab8" data-toggle="tab">Terapia de pareja</a></li>
+				</ul>
+				<div class="tab-content span8" style="text-align: justify;">
+					<div class="tab-pane active" id="tab1">
+						<p>
+							Una <b>adicción</b> (del latín addictĭo) es una enfermedad física
+							y psicoemocional, según la Organización Mundial de la Salud. En
+							el sentido tradicional es una dependencia o necesidad hacia una
+							sustancia, actividad o relación causada por la satisfacción que
+							esta causa a la persona. (<b>codependencia</b>).
+						</p>
+						<p>
+							Está conformada por los deseos que consumen los pensamientos y
+							comportamientos (síndrome de abstinencia) del adicto, y éstos
+							actúan en aquellas actividades diseñadas para conseguir la
+							sensación o efecto deseado y/o para comprometerse en la actividad
+							deseada (comportamientos adictivos). A diferencia de los simples
+							hábitos o influencias consumistas, las adicciones son "<b>dependencias</b>"
+							que traen consigo graves consecuencias en la vida real que
+							deterioran, afectan negativamente, y destruyen relaciones, salud
+							(física y mental), además de la capacidad de funcionar de manera
+							efectiva, mientras que los hábitos consumistas facilitan el
+							efecto contrario.
+						</p>
+						<p>En la actualidad se acepta como adicción, cualquier
+							actividad que el individuo no sea capaz de controlar, que lo
+							lleve a conductas compulsivas y perjudique su calidad de vida,
+							como por ejemplo puede existir, adicción al sexo, al juego
+							(ludopatía), a la pornografía, a la televisión, a las nuevas
+							tecnologías (tecnofilia), al anime, comidas rápidas, etc.</p>
+						<a href="http://es.wikipedia.org/wiki/Adicción"
+							class="btn btn-primary offset3" target="_blank"> Saber más</a>
+					</div>
+					<div class="tab-pane" id="tab2">
+						<p>Aprender a vivir es la prioridad cuando, a priori, no
+							tenemos razón para estar deprimidos, o incluso cuando las
+							tenemos.</p>
+						<p>
+							Puedes conectarte en <a href="http://www.authentichappiness.org"
+								target="_blank">estos</a> cuestionarios de felicidad general
+							para valorar la <b>satisfacción con la vida y optimismo</b>.
+						</p>
+
+						<a href="http://es.wikipedia.org/wiki/Depresión" target="_blank"
+							class="btn btn-primary offset3"> Saber más</a>
+					</div>
+					<div class="tab-pane" id="tab3">
+						<p>
+							El <b>autoconocimiento</b> es el proceso reflexivo (y su
+							resultado) por el cual la persona adquiere noción de su yo y de
+							sus propias cualidades y características. Como todo proceso,
+							puede ser desglosado en diversas fases, como: autopercepción,
+							autoobservación, memoria autobiográfica, autoestima,
+							autoaceptación. No puede haber, pues, autoestima sin
+							autoconocimiento. De ahí la importancia del autoconocimiento para
+							el desarrollo personal. (Lic. Elena Ianantuoni)
+						</p>
+					</div>
+					<div class="tab-pane" id="tab4">
+						<p>
+							La <b>agorafobia</b> es un trastorno de ansiedad que consiste en
+							el miedo a los lugares donde no se puede recibir ayuda, por temor
+							a sufrir una crisis de pánico. Un ataque de pánico o crisis de
+							ansiedad consiste en un cuadro clínico caracterizado por el
+							aumento de la frecuencia y presión sanguínea, la respiración
+							agitada, sudor, sensación de ahogo, mareo, temblores y
+							despersonalización.
+						</p>
+						<p>La agorafobia está estrechamente relacionada con el
+							trastorno de pánico, y no es raro que ambos trastornos sean
+							comórbidos. Entre los miedos que experimenta el agorafóbico están
+							el miedo a vivir una crisis, a desmayarse, a sufrir un infarto, a
+							perder el control, a hacer el ridículo, etc.</p>
+						<p>El trastorno se genera por alguna experiencia negativa por
+							parte de la persona, quien al evitar las situaciones parecidas
+							está desarrollando un mecanismo de aprendizaje que hace
+							permanecer el problema. Entre los factores de riesgo se pueden
+							incluir episodios relacionados con intensos niveles de pánico o
+							experimentar eventos estresantes, incluido el abuso sexual o
+							físico durante la infancia. El tratamiento cognitivo-conductual
+							de la agorafobia es el más exitoso entre los utilizados y se basa
+							en someter al paciente a una exposición gradual a las situaciones
+							que típicamente le provocan la ansiedad.</p>
+						<a href="http://es.wikipedia.org/wiki/Agorafobia" target="_blank"
+							class="btn btn-primary offset3"> Saber más</a>
+					</div>
+					<div class="tab-pane" id="tab5">
+						<p>
+							La <b>ansiedad</b> es sinónimo del miedo. Cuando este miedo
+							interviene de tal manera en nuestra vida que repercute
+							negativamente en nuestro cotidiano, es hora de ponernos en marcha
+							para convertir este miedo en coraje. Técnicas específicas
+							trabajadas nos ayudarán a superar con éxito nuestro malestar,
+							ahora transformado en éxito y victoria.
+						</p>
+						<p>En la actualidad se estima que un 20.5% o más de la
+							población mundial sufre de algún trastorno de ansiedad,
+							generalmente sin saberlo.</p>
+
+						<a href="http://es.wikipedia.org/wiki/Ansiedad" target="_blank"
+							class="btn btn-primary offset3"> Saber más</a>
+					</div>
+					<div class="tab-pane" id="tab6">
+						<p>
+							El <b>duelo</b> es el proceso de adaptación emocional que sigue a
+							cualquier pérdida (pérdida de un empleo, pérdida de un ser
+							querido, pérdida de una relación, etc.). Aunque convencionalmente
+							se ha enfocado la respuesta emocional de la pérdida, el duelo
+							también tiene una dimensión física, cognitiva, filosófica y de la
+							conducta que es vital en el comportamiento humano y que ha sido
+							muy estudiado a lo largo de la historia. En la actualidad se
+							encuentra en discusión el tema de si otras especies también
+							tienen sentimientos de duelo como los seres humanos, y en algunas
+							de ellas se han observado comportamientos peculiares ante la
+							muerte de sus congéneres.
+						</p>
+						<a href="http://es.wikipedia.org/wiki/Duelo_(psicolog%C3%ADa)"
+							target="_blank" class="btn btn-primary offset3"> Saber más</a>
+					</div>
+					<div class="tab-pane" id="tab7">
+						<p>Hay solución para esos pensamientos intrusivos que entran
+							en tu mente sin permiso y atormentan tu día a día. La terapia te
+							ayudará a extinguirlos y aprenderás a desplazar esa técnica de
+							forma positiva en otras direcciones pero dentro de tu misma
+							persona, tomando el control de tu vida, siendo tú el
+							protagonista.</p>
+						<p>La auténtica felicidad, es la felicidad compartida.
+							Compartir y no competir.</p>
+						<p>La competencia encarna odio, deseo de dañar al otros. La
+							terapia cognitivo conductual (multimodal) ofrece una visión
+							práctica y actualizada sobre la capacidad del ser humano de ser
+							feliz. Nuestras acciones evidencian claves para mejorar nuestro
+							nivel de felicidad.</p>
+						<p>
+							Te ofrecemos la posibilidad de descubrir tus fortalezas <a
+								href="http://www.authentichappiness.org" target="_blank">aquí</a>
+						</p>
+						<p>Entrena también tu mente y anota tres éxitos o tres sucesos
+							positivos cada día, apuntando los puntos fuertes que has
+							utilizado: persistencia, optimismo, humor, ...</p>
+						<a href="http://es.wikipedia.org/wiki/Obsesivo"
+							class="btn btn-primary offset3" target="_blank"> Saber más</a>
+					</div>
+					<div class="tab-pane" id="tab8">
+						<p>Se trabaja la restauración de la confianza y el respeto,
+							aceptando y compartiendo todos estos sentimientos. La importancia
+							de comunicar necesidades y miedos para comprenderse mutuamente.
+							Asumir la nueva situación como reto de la pareja, negociando y
+							pactando acuerdos. De igual manera se trabajaran la
+							responsabilidad y el asumir las consecuencias. Juntamente se
+							contemplan los beneficios del perdón.</p>
+						<p>Y para fomentar una relación que perdure, se trabajaran
+							tres claves importantes:
+						<ul>
+							<li>La necesidad de hacer concesiones para convivir</li>
+							<li>La sinceridad inteligente como elemento básico para
+								contribuir a una verdadera relación.</li>
+							<li>Madurar aprendiendo. Las dificultades serán nuestras
+								mayores oportunidades para crecer como pareja.</li>
+						</ul>
+						</p>
+					</div>
+					<div class="tab-pane" id="autoestima">
+						<p>Trabajamos técnicas específicas para aprender a quererte y
+							valorarte, amando y valorando también a los demás. En nuestra
+							mente está el origen del miedo pero también la solución. Renuncia
+							a tu necesidad de aprobación externa. Sólo tú puedes juzgar tu
+							valia. El objetivo será trabajar descubriendo tu infinito valor
+							al margen de lo que piensen los demás. Para cuidar bien de uno
+							mismo es imprescindible escuchar el corazón en silencio. Sabes
+							qué siente y necesita. Nutrirlo con actitudes positivas, tratarlo
+							con respeto, ser tolerantes con él cuando sufre, nos hace sentir
+							mejor con nosotros y con los demás.</p>
+						<a href="http://es.wikipedia.org/wiki/Autoestima"
+							class="btn btn-primary offset3" target="_blank"> Saber más</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="precios">
+			<h2>Precios</h2>
+			<p>
+				En servicios de <b>psicoterapia</b>, cada sesión es de 1h. <span
+					class="label label-important">Tu primera visita es gratuita</span>
+				y el resto de sesiones a <span class="badge badge-important">59€</span>.
+				El motivo es dar un margen prudencial al cliente para evaluar la
+				idoneidad de su terapia y su terapeuta asi como la información del
+				tiempo aproximado de su terapia. Contacta sin compromiso para pedir
+				tu cita.
+			</p>
+			<p>
+				Para contratar servicios de <b>selección de personal</b> o <b>coaching</b>,
+				el listado de precios no es público. Contacta con nosotros para
+				saber más.
+			</p>
+
+				<div>
+					<img src="img/consulta1.jpeg" width="300" style="margin-right: 40px;margin-top: 20px;">
+					<img src="img/consulta2.jpeg" width="550" style="margin-right: 40px;margin-top: 20px;">
+				</div>
+
+		</section>
+		<section id="contact">
+			<h2>Dónde nos puedes encontrar?</h2>
+
+			<div style="text-align: center;">
+				<img src="img/consulta3.jpeg" width="200" style="border-radius: 50%">
+			</div>
+			<div style="width: 70%; float: left;">
+				<div style="float: left;">
+					<p>Ester Fernández (<b>Psicóloga Coach</b> acreditada por el <a href="http://www.copc.cat/" target="_blank">COPC</a>)</p>
+					Para cualquier duda, nos puedes contactar por:
+					<p></p>
+					<address>
+						<strong><i class="icon-user"></i>Teléfono o Whatsapp</strong> <br>(+34)646.756.766<br>
+					</address>
+					<address>
+						<strong><i class="icon-envelope"></i> Correo electrónico</strong><br>
+						<a href="mailto:psicoconsulting@psicoconsulting-empresarial.com">
+							psicoconsulting@psicoconsulting-empresarial.com </a><br>
+					</address>
+				</div>
+			</div>
+			<div style="width: 30%; float: left;">
+				<div style="float: left;">
+					<address>
+						<strong><i class="icon-comment"></i> Twitter</strong><br>
+						Encuentranos como <b>@psicoconsultin1</b><br>
+					</address>
+					<address>
+						<strong><i class="icon-map-marker"></i> Oficinas (sólo
+							con reserva)</strong><br> Calle d'Alfarràs 17, <br> Barcelona,
+						España<br>
+					</address>
+				</div>
+			</div>
+			<div id="map-canvas" style="height: 400px; clear: left"></div>
+		</section>
+
+
+
+
+		<div style="clear: left">
+
+				<a href="http://www.red-psi.org" target="_blank"
+					title="Red Psi: Red Profesional de Psicología"> http://www.red-psi.org
+
+				</a>
+
+		</div>
+	</div>
+	<!-- /.container -->
+
+
+	<footer class="footer" style="text-align: center;">
+
+
+
+		<p>"Somos lo que hacemos día a día. De modo que la excelencia no
+			es un acto, sino un hábito" - Aristóteles</p>
+		&copy; 2018 Psicoconsulting-empresarial
+		<p>
+		<a href="avisolegal.htm" target="_blank">Aviso legal</a>
+		|
+		<a href="politicas.htm" target="_blank">Políticas de privacidad</a></p>
+	</footer>
+
+	<!-- Le javascript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script>
+		!function($) {
+
+			$(function() {
+				// carousel demo
+				$('#myCarousel').carousel();
+
+			});
+		}(window.jQuery);
+	</script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-42004769-1', 'psicoconsulting-empresarial.com');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>

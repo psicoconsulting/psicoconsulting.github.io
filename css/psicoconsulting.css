@@ -5,6 +5,10 @@
     body {
       color: #5a5a5a;
     }
+    p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
 
 #map-canvas { height: 100% }
 img {
